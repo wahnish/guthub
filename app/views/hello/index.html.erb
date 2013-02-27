@@ -4,8 +4,8 @@
 
 The sum of <%= @first %> and <%= @second %> is <%= @sum %>
 
-That's <%= @sum.even? 'even' : 'odd' %>
+That's <%= @sum.even? ? 'even' : 'odd' %>.
 
-<% 1.upto(@sum + 1).each.do |num| %>
+<% 1.upto(@sum + 1).each do |num| %>
 	<p> <%= num %> </p>
 <% end %>
